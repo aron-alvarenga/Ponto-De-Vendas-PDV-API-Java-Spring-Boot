@@ -176,6 +176,13 @@ spring.jpa.show-sql=false
 mvn test
 ```
 
+## Novo Direcionamento
+
+* **Domínio mais forte**: venda com status (DRAFT/CONFIRMED/CANCELED), regras (estoque não pode ficar negativo), consistência transacional e idempotência.
+* **API profissional**: DTOs, validação, paginação, filtros, erros padronizados (Problem Details), logs estruturados.
+* **Segurança + auditoria**: autenticação (JWT), RBAC (ADMIN/CAIXA/GERENTE), trilha de auditoria (createdAt/createdBy).
+* **Qualidade**: testes (unit + integração), migrations (Flyway), Swagger/OpenAPI, Docker Compose (MySQL).
+
 ## Contribuindo
 
 Contribuições são bem-vindas! Sinta-se à vontade para abrir issues e pull requests.
@@ -194,3 +201,4 @@ Este projeto está sob a licença MIT.
 ---
 
 **Nota**: Este projeto utiliza H2 em memória por padrão para facilitar o desenvolvimento. Para produção, configure o MySQL conforme as instruções acima.
+
